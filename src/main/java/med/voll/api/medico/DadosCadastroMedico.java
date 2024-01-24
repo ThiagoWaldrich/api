@@ -10,11 +10,13 @@ import med.voll.api.endereco.DadosEndereco;
 
 public record DadosCadastroMedico(
 
-        @NotBlank
+        @NotBlank //bean validation
         String nome,
-        @NotBlank
-        @Email
+        @NotBlank //bean validation
+        @Email //bean validation
         String email,
+        @NotBlank
+        String telefone,
         @NotBlank
         @Pattern(regexp="\\d{4,6}")
         String crm,
