@@ -22,6 +22,7 @@ public class Paciente {
     private String nome;
     private String email;
     private String telefone;
+    private String cpf;
     @Enumerated(EnumType.STRING)
     private Especialidade especialidade;
     @Embedded
